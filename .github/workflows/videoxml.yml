@@ -1,0 +1,63 @@
+name: VideoXML
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 3 */2 * *'  # Run at 3am every 48 hours
+  workflow_dispatch:
+
+jobs:
+  scrape_and_generate:
+    name: Scrape TV Programming and Generate Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pytz selenium webdriver-manager
+
+      - name: Set up Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Generate XML EPG
+        run: |
+          python py/videoxml.py > en/videoall.xml
+        env:
+          TZ: America/New_York
+
+      - name: Generate M3U Playlist
+        run: |
+          python py/videolivetv.py > en/videoall.m3u
+          # Create a copy as videolivetv.m3u if needed
+          cp en/videoall.m3u en/videolivetv.m3u
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update EPG and M3U playlists"
+          branch: main
+          file_pattern: |
+            en/videoall.xml
+            en/videoall.m3u
+            en/videolivetv.m3u
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
