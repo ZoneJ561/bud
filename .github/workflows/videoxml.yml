@@ -43,7 +43,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends google-chrome-stable
 
-      # Generate XML EPG file with timestamp
+      # Generate XML EPG file
       - name: Generate XML EPG
         run: |
           mkdir -p en
@@ -52,23 +52,23 @@ jobs:
         env:
           TZ: America/New_York
 
-      # Generate M3U playlists with timestamp
+      # Generate M3U playlists
       - name: Generate M3U Playlists
         run: |
           mkdir -p en
-          # First run the script and clean the output
-          python py/videolivetv.py | grep -v '^<' > en/raw_playlist.m3u
+          # Run the script and clean the output
+          python py/videolivetv.py > en/raw_playlist.m3u
           # Create the final M3U with proper headers
           echo "#EXTM3U" > en/videoall.m3u
           echo "# Last Updated: $(date)" >> en/videoall.m3u
-          # Remove any HTML tags and empty lines, then append to the file
-          grep -v '^<' en/raw_playlist.m3u | grep -v '^$' >> en/videoall.m3u
+          # Clean and append the playlist
+          grep -v '^<' en/raw_playlist.m3u | grep -v '^$' | grep -v '^\s*$' | grep -v '^\s*#' >> en/videoall.m3u
           # Create a copy with alternative name
           cp en/videoall.m3u en/videolivetv.m3u
-          # Clean up temporary file
+          # Clean up
           rm -f en/raw_playlist.m3u
 
-      # Force commit changes
+      # Commit and push updates
       - name: Commit and push updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -78,6 +78,6 @@ jobs:
             en/videoall.xml
             en/videoall.m3u
             en/videolivetv.m3u
-          commit_options: '--allow-empty'
+          commit_options: '--allow-empty --no-verify'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
