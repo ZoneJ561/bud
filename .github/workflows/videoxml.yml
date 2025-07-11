@@ -43,41 +43,51 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends google-chrome-stable
 
-      # Generate XML EPG file
+      # Generate XML EPG file with current timestamp
       - name: Generate XML EPG
         run: |
           mkdir -p en
-          echo "<!-- Generated at: $(date) -->" > en/videoall.xml
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          echo "<!-- Generated at: $TIMESTAMP -->" > en/videoall.xml
           python py/videoxml.py >> en/videoall.xml
-        env:
-          TZ: America/New_York
 
-      # Generate M3U playlists
+      # Generate M3U playlists with current timestamp
       - name: Generate M3U Playlists
         run: |
           mkdir -p en
-          # Run the script and clean the output
-          python py/videolivetv.py > en/raw_playlist.m3u
-          # Create the final M3U with proper headers
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          
+          # Generate the M3U file with timestamp
           echo "#EXTM3U" > en/videoall.m3u
-          echo "# Last Updated: $(date)" >> en/videoall.m3u
-          # Clean and append the playlist
-          grep -v '^<' en/raw_playlist.m3u | grep -v '^$' | grep -v '^\s*$' | grep -v '^\s*#' >> en/videoall.m3u
+          echo "# Last Updated: $TIMESTAMP" >> en/videoall.m3u
+          
+          # Run the script and clean the output
+          python py/videolivetv.py | grep -v '^<' | grep -v '^$' | grep -v '^\s*$' | grep -v '^\s*#' >> en/videoall.m3u
+          
           # Create a copy with alternative name
           cp en/videoall.m3u en/videolivetv.m3u
-          # Clean up
-          rm -f en/raw_playlist.m3u
+          
+          # Verify the files
+          echo "Generated files:"
+          ls -la en/
+          echo "\nFirst few lines of videoall.m3u:"
+          head -n 5 en/videoall.m3u || true
 
-      # Commit and push updates
-      - name: Commit and push updates
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Auto-update TV guide and playlists - $(date +'%Y-%m-%d %H:%M:%S')"
-          branch: main
-          file_pattern: |
-            en/videoall.xml
-            en/videoall.m3u
-            en/videolivetv.m3u
-          commit_options: '--allow-empty --no-verify'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Force commit and push updates
+      - name: Force commit and push updates
+        run: |
+          # Configure git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Get current timestamp
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          
+          # Add and force commit
+          git add en/videoall.xml en/videoall.m3u en/videolivetv.m3u
+          git commit -m "Auto-update TV guide and playlists - $TIMESTAMP" --allow-empty
+          
+          # Force push to update the branch
+          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
+          
+          echo "Files updated and pushed at $TIMESTAMP"
