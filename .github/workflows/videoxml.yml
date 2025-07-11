@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 3 */2 * *'  # Run at 3am every 48 hours
+    - cron: '0 */2 * * *'  # Run every 2 hours
   workflow_dispatch:
 
 jobs:
@@ -43,31 +43,36 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends google-chrome-stable
 
-      # Generate XML EPG file
+      # Generate XML EPG file with timestamp
       - name: Generate XML EPG
         run: |
           mkdir -p en
-          python py/videoxml.py > en/videoall.xml
+          echo "<!-- Generated at: $(date) -->" > en/videoall.xml
+          python py/videoxml.py >> en/videoall.xml
         env:
           TZ: America/New_York
 
-      # Generate M3U playlists
+      # Generate M3U playlists with timestamp
       - name: Generate M3U Playlists
         run: |
           mkdir -p en
-          python py/videolivetv.py > en/videoall.m3u
-          # Create a copy with alternative name if needed
+          # Add timestamp as comment to force update
+          echo "#EXTM3U" > en/videoall.m3u
+          echo "# Last Updated: $(date)" >> en/videoall.m3u
+          python py/videolivetv.py | grep -v "^#" >> en/videoall.m3u
+          # Create a copy with alternative name
           cp en/videoall.m3u en/videolivetv.m3u
 
-      # Commit and push changes
+      # Force commit changes
       - name: Commit and push updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Auto-update TV guide and playlists"
+          commit_message: "Auto-update TV guide and playlists - $(date +'%Y-%m-%d %H:%M:%S')"
           branch: main
           file_pattern: |
             en/videoall.xml
             en/videoall.m3u
             en/videolivetv.m3u
+          commit_options: '--allow-empty'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
