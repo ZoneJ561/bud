@@ -3,6 +3,33 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import pytz
 import xml.etree.ElementTree as ET
+import time
+import random
+
+# Add retry decorator
+def retry(max_retries=3, delay=1, backoff=2, exceptions=(Exception,)):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            retries = 0
+            current_delay = delay
+            last_exception = None
+            
+            while retries < max_retries:
+                try:
+                    return func(*args, **kwargs)
+                except exceptions as e:
+                    last_exception = e
+                    retries += 1
+                    if retries < max_retries:
+                        sleep_time = current_delay + (random.uniform(0, 1) * 2)  # Add jitter
+                        print(f"Retry {retries}/{max_retries} after error: {str(e)}. Waiting {sleep_time:.2f} seconds...")
+                        time.sleep(sleep_time)
+                        current_delay *= backoff
+            
+            print(f"Max retries ({max_retries}) reached. Last error: {str(last_exception)}")
+            return None
+        return wrapper
+    return decorator
 
 # Dictionary mapping channel IDs to channel names
 channel_names = {
@@ -27,8 +54,8 @@ channel_names = {
     "chch-hamilton-on/43": "CHCH",
     "cinemax-eastern-feed/632": "Cinemax",
     "cinepop-hd/9156": "Cinepop",
-    "cnbc-usa/201": "CNBC",
     "cmt-canada/120": "CMT",
+    "cnbc-usa/201": "CNBC",
     "cnn/70": "CNN",
     "cnn-international-north-america/3008": "CNN International",
     "comedy-central-us-eastern-feed/647": "Comedy Central",
@@ -266,56 +293,70 @@ channel_names = {
     # Add more channel IDs and names as needed
 }
 
+@retry(max_retries=5, delay=2, backoff=1.5, exceptions=(requests.exceptions.RequestException,))
 def scrape_tv_programming(channel_id, date):
     url = f"https://www.tvpassport.com/tv-listings/stations/{channel_id}/{date}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
     }
     cookies = {
         "cisession": "d86212bfc9056dc4f9b43c43e4139a5f11f2f719"
     }
-    response = requests.get(url, headers=headers, cookies=cookies)
     
-    if response.status_code == 200:
+    try:
+        response = requests.get(url, headers=headers, cookies=cookies, timeout=30)
+        response.raise_for_status()
+        
         soup = BeautifulSoup(response.content, "html.parser")
         programming_items = soup.select(".station-listings .list-group-item")
 
         programming_data = []
 
         for item in programming_items:
-            start_time = parse_start(item)
-            duration = parse_duration(item)
-            end_time = start_time + timedelta(minutes=duration)
-            title = parse_title(item)
-            sub_title = parse_sub_title(item)
-            description = parse_description(item)
-            icon = parse_icon(item)
-            category = parse_category(item)
-            rating = parse_rating(item)
-            actors = parse_actors(item)
-            guest = parse_guest(item)
-            director = parse_director(item)
+            try:
+                start_time = parse_start(item)
+                duration = parse_duration(item)
+                end_time = start_time + timedelta(minutes=duration)
+                title = parse_title(item)
+                sub_title = parse_sub_title(item)
+                description = parse_description(item)
+                icon = parse_icon(item)
+                category = parse_category(item)
+                rating = parse_rating(item)
+                actors = parse_actors(item)
+                guest = parse_guest(item)
+                director = parse_director(item)
 
-            programming_data.append({
-                "title": title,
-                "sub_title": sub_title,
-                "description": description,
-                "icon": icon,
-                "category": category,
-                "rating": rating,
-                "actors": actors,
-                "guest": guest,
-                "director": director,
-                "start_time": start_time.strftime("%Y-%m-%d %H:%M:%S"),
-                "end_time": end_time.strftime("%Y-%m-%d %H:%M:%S"),
-                "channel_id": channel_id  # Add channel_id to the dictionary
-            })
+                programming_data.append({
+                    "title": title,
+                    "sub_title": sub_title,
+                    "description": description,
+                    "icon": icon,
+                    "category": category,
+                    "rating": rating,
+                    "actors": actors,
+                    "guest": guest,
+                    "director": director,
+                    "start_time": start_time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "end_time": end_time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "channel_id": channel_id
+                })
+            except Exception as e:
+                print(f"Error processing program item: {e}")
+                continue
 
         return programming_data
-    else:
-        print("Failed to retrieve programming data. Status code:", response.status_code)
+        
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed for {url}: {e}")
+        raise  # Re-raise to trigger retry
+    except Exception as e:
+        print(f"Unexpected error processing {url}: {e}")
         return None
-
 
 def parse_description(item):
     return item.get("data-description")
@@ -725,3 +766,20 @@ if all_programs:
     # Print the XML content
     xml_content = create_xml(channel_programs)  # Generate XML content
     print(xml_content)  # Print the XML content
+
+if __name__ == "__main__":
+    try:
+        # Get current date in Eastern Time
+        eastern = pytz.timezone('America/New_York')
+        now = datetime.now(eastern)
+        
+        # Generate XML for today
+        print("Generating TV guide...")
+        print("<!-- Generated at: " + now.strftime("%Y-%m-%d %H:%M:%S %Z") + " -->")
+        
+        # The rest of your main script here
+        # ...
+        
+    except Exception as e:
+        print(f"Error in main execution: {e}")
+        exit(1)
