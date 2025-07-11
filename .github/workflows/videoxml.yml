@@ -57,12 +57,12 @@ jobs:
           mkdir -p en
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
           
-          # Generate the M3U file with timestamp
+          # Generate the M3U file with timestamp and proper headers
           echo "#EXTM3U" > en/videoall.m3u
           echo "# Last Updated: $TIMESTAMP" >> en/videoall.m3u
           
-          # Run the script and clean the output
-          python py/videolivetv.py | grep -v '^<' | grep -v '^$' | grep -v '^\s*$' | grep -v '^\s*#' >> en/videoall.m3u
+          # Run the script, filter out tracking URLs, and clean up the output
+          python py/videolivetv.py | grep -v '^<' | grep -v '^$' | grep -v '^\s*$' | grep -v '^\s*#' | grep -v 'jwplayer6/ping' | grep -v 'thetvapp\.to/v1/' | sort -u >> en/videoall.m3u
           
           # Create a copy with alternative name
           cp en/videoall.m3u en/videolivetv.m3u
@@ -71,7 +71,7 @@ jobs:
           echo "Generated files:"
           ls -la en/
           echo "\nFirst few lines of videoall.m3u:"
-          head -n 5 en/videoall.m3u || true
+          head -n 10 en/videoall.m3u || true
 
       # Force commit and push updates
       - name: Force commit and push updates
