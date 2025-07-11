@@ -1,4 +1,4 @@
-name: VideoXML
+name: TV Guide and Playlist Generator
 
 on:
   push:
@@ -12,23 +12,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  scrape_and_generate:
-    name: Scrape TV Programming and Generate Files
+  generate_files:
+    name: Generate TV Guide and Playlists
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
+      # Set up Python
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
+          cache: 'pip'
 
-      - name: Install Python Dependencies
+      # Install Python dependencies
+      - name: Install Python packages
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pytz selenium webdriver-manager
+          pip install requests beautifulsoup4 pytz selenium webdriver-manager selenium-stealth
 
+      # Set up Chrome for Selenium
       - name: Set up Chrome
         run: |
           sudo apt-get update
@@ -36,24 +42,29 @@ jobs:
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y --no-install-recommends google-chrome-stable
 
+      # Generate XML EPG file
       - name: Generate XML EPG
         run: |
+          mkdir -p en
           python py/videoxml.py > en/videoall.xml
         env:
           TZ: America/New_York
 
-      - name: Generate M3U Playlist
+      # Generate M3U playlists
+      - name: Generate M3U Playlists
         run: |
+          mkdir -p en
           python py/videolivetv.py > en/videoall.m3u
-          # Create a copy as videolivetv.m3u if needed
+          # Create a copy with alternative name if needed
           cp en/videoall.m3u en/videolivetv.m3u
 
-      - name: Commit and Push Changes
+      # Commit and push changes
+      - name: Commit and push updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update EPG and M3U playlists"
+          commit_message: "Auto-update TV guide and playlists"
           branch: main
           file_pattern: |
             en/videoall.xml
