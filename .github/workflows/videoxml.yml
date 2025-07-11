@@ -56,12 +56,17 @@ jobs:
       - name: Generate M3U Playlists
         run: |
           mkdir -p en
-          # Add timestamp as comment to force update
+          # First run the script and clean the output
+          python py/videolivetv.py | grep -v '^<' > en/raw_playlist.m3u
+          # Create the final M3U with proper headers
           echo "#EXTM3U" > en/videoall.m3u
           echo "# Last Updated: $(date)" >> en/videoall.m3u
-          python py/videolivetv.py | grep -v "^#" >> en/videoall.m3u
+          # Remove any HTML tags and empty lines, then append to the file
+          grep -v '^<' en/raw_playlist.m3u | grep -v '^$' >> en/videoall.m3u
           # Create a copy with alternative name
           cp en/videoall.m3u en/videolivetv.m3u
+          # Clean up temporary file
+          rm -f en/raw_playlist.m3u
 
       # Force commit changes
       - name: Commit and push updates
