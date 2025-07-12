@@ -60,7 +60,7 @@ jobs:
           
           # Filter output, keeping only valid #EXTINF and URL pairs
           cat en/raw_output.txt | grep -v -E '^<|^$|^\s*$|github\.com.*offline\.mp4|jwplayer6/ping|thetvapp\.to/v1/' | \
-          awk '/^#EXTINF/ {if (p) print p; p=$0; next} p && !/^#/ && /\.m3u8$/ {print p; print; p=""} END {if (p) print "# Skipped incomplete entry: " p > "/dev/stderr"}' | \
+          awk '/^#EXTINF/ {if (p) print p; p=$0; next} p && !/^#/ && !/github\.com/ && /\.m3u8$/ {print p; print; p=""} END {if (p) print "# Skipped incomplete entry: " p > "/dev/stderr"}' | \
           sort -t'"' -k4,4 -u >> en/videoall.m3u
           
           # Create a copy
