@@ -18,7 +18,7 @@ user_agents = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/126.0.6478.35 Mobile/15E148 Safari/604.1',
-    'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.165 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.5; rv:127.0) Gecko/20100101 Firefox/127.0',
     'Mozilla/5.0 (X11; Linux i686; rv:127.0) Gecko/20100101 Firefox/127.0',
@@ -216,7 +216,7 @@ print("#EXTM3U")
 # Iterate over each live TV channel link
 for name, link in live_tv_links:
     # Initialize variables for this iteration
-    m3u8_url = None
+    m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"  # Default URL
     logo_url = channel_logos.get(name, "")  # Get logo URL or empty string if not found
     
     try:
@@ -225,44 +225,43 @@ for name, link in live_tv_links:
 
         try:
             # Wait for the button to be clickable
-            wait = WebDriverWait(driver, 5)
+            wait = WebDriverWait(driver, 10)  # Increased timeout to 10 seconds
             try:
                 # Try to find loadVideoBtn first
                 video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtn')))
             except:
                 # If loadVideoBtn is not found, look for loadVideoBtnTwo
                 video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtnTwo')))
-            video_button.click()
+            
+            # Scroll the button into view and click it
+            driver.execute_script("arguments[0].scrollIntoView(true);", video_button)
+            driver.execute_script("arguments[0].click();", video_button)
 
-            # Wait for a brief period to allow the page to load and network requests to be made
-            time.sleep(5)
+            # Wait for the video to load (increased wait time)
+            time.sleep(8)
 
             # Get all network requests
             network_requests = driver.execute_script("return JSON.stringify(performance.getEntries());")
-
-            # Convert the string back to a list of dictionaries in Python
             network_requests = json.loads(network_requests)
 
             # Filter out only the URLs containing ".m3u8"
-            m3u8_urls = [request["name"] for request in network_requests if ".m3u8" in request["name"]]
+            m3u8_urls = [request["name"] for request in network_requests if ".m3u8" in request.get("name", "")]
 
             if m3u8_urls:
-                m3u8_url = m3u8_urls[0]
-            else:
-                m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"
+                # Filter out any URLs that might be from CDNs or analytics
+                filtered_urls = [url for url in m3u8_urls if 'thetvapp.to' in url and 'tracks-v2a1' in url]
+                m3u8_url = filtered_urls[0] if filtered_urls else m3u8_urls[0]
                 
         except Exception as e:
-            # If an exception occurs, use the default link
-            m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"
-            
-        # Always print the channel info and URL (even if it's the offline URL)
-        print(f"#EXTINF:-1 group-title=\"USA TV\" tvg-ID=\"{name}\" tvg-name=\"{name}\" tvg-logo=\"{logo_url}\", {name}")
-        print(m3u8_url)
-        
+            print(f"# Error processing {name}: {str(e)}", file=sys.stderr)
+    
     except Exception as e:
-        # If we can't even load the page, log the error but continue with the next channel
-        print(f"# Error processing {name}: {str(e)}", file=sys.stderr)
-        continue
+        print(f"# Error loading {name} page: {str(e)}", file=sys.stderr)
+    
+    # Print the channel info and URL (even if it's the default URL)
+    print(f"#EXTINF:-1 group-title=\"USA TV\" tvg-ID=\"{name}\" tvg-name=\"{name}\" tvg-logo=\"{logo_url}\", {name}")
+    print(m3u8_url)
+    print("", file=sys.stderr)  # Add a newline in stderr for better error reading
 
 # Close the WebDriver
 driver.quit()
