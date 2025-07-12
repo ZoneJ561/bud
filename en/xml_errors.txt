@@ -1,0 +1,12 @@
+# Error fetching https://www.tvpassport.com/tv-listings/stations/acc-network/130609/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/acc-network/130609/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/acc-network/130609/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/amc-canada/4313/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/amc-canada/4313/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/amc-canada/4313/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bbc-world-news-hd/89666/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bbc-world-news-hd/89666/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bbc-world-news-hd/89666/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bet/4331/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bet/4331/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
+# Error fetching https://www.tvpassport.com/tv-listings/stations/bet/4331/20250712: 404 Client Error: Not Found for url: https://www.tvpassport.com/tv-listings/stations
