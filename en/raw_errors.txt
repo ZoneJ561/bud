@@ -1,7 +1,7 @@
 # Navigating to https://thetvapp.to/
 # Skipping link: name=Crime & Investigation HD, url=https://thetvapp.to/tv/crime-investigation-hd-live-stream/
 # Processing A&E: https://thetvapp.to/tv/ae-live-stream/
-# No valid .m3u8 URL found for A&E. Network requests: []
+# Successfully added A&E with URL: https://v16.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=3QyFOjF-3DXJKDs6XNAsWQ&expires=1752345265&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing ACC Network: https://thetvapp.to/tv/acc-network-live-stream/
 # No valid .m3u8 URL found for ACC Network. Network requests: []
 # Processing AMC: https://thetvapp.to/tv/amc-live-stream/
@@ -15,7 +15,7 @@
 # Processing BBC World News HD: https://thetvapp.to/tv/bbc-world-news-hd-live-stream/
 # No valid .m3u8 URL found for BBC World News HD. Network requests: []
 # Processing BET: https://thetvapp.to/tv/bet-live-stream/
-# Successfully added BET with URL: https://v17.thetvapp.to/hls/BETEast/tracks-v2a1/mono.m3u8?token=SJ5mu3JFxxX-GRE4PrB3eg&expires=1752337600&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# No valid .m3u8 URL found for BET. Network requests: []
 # Processing BET Her: https://thetvapp.to/tv/bet-her-live-stream/
 # No valid .m3u8 URL found for BET Her. Network requests: []
 # Processing Big Ten Network: https://thetvapp.to/tv/big-ten-network-live-stream/
@@ -35,7 +35,7 @@
 # Processing CMT: https://thetvapp.to/tv/cmt-live-stream/
 # No valid .m3u8 URL found for CMT. Network requests: []
 # Processing CNBC: https://thetvapp.to/tv/cnbc-live-stream/
-# No valid .m3u8 URL found for CNBC. Network requests: []
+# Successfully added CNBC with URL: https://v5.thetvapp.to/hls/CNBC/tracks-v2a1/mono.m3u8?token=VxFoY9MDaCVFwr1OQpDt2g&expires=1752345691&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing CNN: https://thetvapp.to/tv/cnn-live-stream/
 # No valid .m3u8 URL found for CNN. Network requests: []
 # Processing Comedy Central: https://thetvapp.to/tv/comedy-central-live-stream/
@@ -59,15 +59,15 @@
 # Processing Disney Junior: https://thetvapp.to/tv/disney-junior-live-stream/
 # No valid .m3u8 URL found for Disney Junior. Network requests: []
 # Processing Disney XD: https://thetvapp.to/tv/disney-xd-live-stream/
-# No valid .m3u8 URL found for Disney XD. Network requests: []
+# Successfully added Disney XD with URL: https://v15.thetvapp.to/hls/DisneyXDEast/tracks-v2a1/mono.m3u8?token=uPFMJVVnJ3evTjCR98U5Bg&expires=1752345982&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing E!: https://thetvapp.to/tv/e-live-stream/
-# No valid .m3u8 URL found for E!. Network requests: []
+# Successfully added E! with URL: https://v4.thetvapp.to/hls/EEast/tracks-v2a1/mono.m3u8?token=fsSr6QkRaDB4pvaEojikgw&expires=1752346008&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing ESPN: https://thetvapp.to/tv/espn-live-stream/
 # No valid .m3u8 URL found for ESPN. Network requests: []
 # Processing ESPN2: https://thetvapp.to/tv/espn2-live-stream/
 # No valid .m3u8 URL found for ESPN2. Network requests: []
 # Processing ESPNews: https://thetvapp.to/tv/espnews-live-stream/
-# No valid .m3u8 URL found for ESPNews. Network requests: []
+# Successfully added ESPNews with URL: https://v15.thetvapp.to/hls/ESPNews/tracks-v2a1/mono.m3u8?token=Qkb-8xlgWMtrmH9h7Te7Qg&expires=1752346082&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing ESPNU: https://thetvapp.to/tv/espnu-live-stream/
 # No valid .m3u8 URL found for ESPNU. Network requests: []
 # Processing Food Network: https://thetvapp.to/tv/food-network-live-stream/
@@ -81,11 +81,11 @@
 # Processing FOX Sports 2: https://thetvapp.to/tv/fox-sports-2-live-stream/
 # No valid .m3u8 URL found for FOX Sports 2. Network requests: []
 # Processing Freeform: https://thetvapp.to/tv/freeform-live-stream/
-# Successfully added Freeform with URL: https://v2.thetvapp.to/hls/FreeformEast/tracks-v2a1/mono.m3u8?token=BScW1prfizLqB2SEXxzJyA&expires=1752338412&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# Successfully added Freeform with URL: https://v12.thetvapp.to/hls/FreeformEast/tracks-v2a1/mono.m3u8?token=MUQnoMecUIUTRsUJ8ASRow&expires=1752346257&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing Fuse HD: https://thetvapp.to/tv/fuse-hd-live-stream/
 # No valid .m3u8 URL found for Fuse HD. Network requests: []
 # Processing FX: https://thetvapp.to/tv/fx-live-stream/
-# No valid .m3u8 URL found for FX. Network requests: []
+# Successfully added FX with URL: https://v17.thetvapp.to/hls/FXEast/tracks-v2a1/mono.m3u8?token=3KTPWJzCkkHS2R0qLOijUQ&expires=1752346307&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing FX Movie: https://thetvapp.to/tv/fx-movie-live-stream/
 # No valid .m3u8 URL found for FX Movie. Network requests: []
 # Processing FXX: https://thetvapp.to/tv/fxx-live-stream/
@@ -95,7 +95,7 @@
 # Processing Golf Channel: https://thetvapp.to/tv/golf-channel-live-stream/
 # No valid .m3u8 URL found for Golf Channel. Network requests: []
 # Processing Hallmark: https://thetvapp.to/tv/hallmark-live-stream/
-# Successfully added Hallmark with URL: https://v5.thetvapp.to/hls/HallmarkChannelEast/tracks-v2a1/mono.m3u8?token=XmA82AytAwTsUjTAASVvnQ&expires=1752338585&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# No valid .m3u8 URL found for Hallmark. Network requests: []
 # Processing Hallmark Drama HD: https://thetvapp.to/tv/hallmark-drama-hd-live-stream/
 # No valid .m3u8 URL found for Hallmark Drama HD. Network requests: []
 # Processing Hallmark Movies & Mysteries HD: https://thetvapp.to/tv/hallmark-movies-mysteries-hd-live-stream/
@@ -105,7 +105,7 @@
 # Processing HBO Comedy HD: https://thetvapp.to/tv/hbo-comedy-hd-live-stream/
 # No valid .m3u8 URL found for HBO Comedy HD. Network requests: []
 # Processing HBO East: https://thetvapp.to/tv/hbo-east-live-stream/
-# Successfully added HBO East with URL: https://v12.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=OxC2eCjaKR8vTNQR82fbMA&expires=1752338711&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# Successfully added HBO East with URL: https://v3.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=yqYlmz_0ZSSaEwDvI9MOtw&expires=1752346555&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing HBO Family East: https://thetvapp.to/tv/hbo-family-east-live-stream/
 # No valid .m3u8 URL found for HBO Family East. Network requests: []
 # Processing HBO Signature: https://thetvapp.to/tv/hbo-signature-live-stream/
@@ -135,9 +135,9 @@
 # Processing MLB Network: https://thetvapp.to/tv/mlb-network-live-stream/
 # No valid .m3u8 URL found for MLB Network. Network requests: []
 # Processing MoreMAX: https://thetvapp.to/tv/moremax-live-stream/
-# No valid .m3u8 URL found for MoreMAX. Network requests: []
+# Successfully added MoreMAX with URL: https://v1.thetvapp.to/hls/MoreMaxEast/tracks-v2a1/mono.m3u8?token=jriI_EqoCQVX3gmqDziGkw&expires=1752346923&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing MotorTrend HD: https://thetvapp.to/tv/motortrend-hd-live-stream/
-# Successfully added MotorTrend HD with URL: https://v13.thetvapp.to/hls/Motortrend/tracks-v2a1/mono.m3u8?token=m5WfkOFDAS9_JARFyEJYMw&expires=1752339111&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# No valid .m3u8 URL found for MotorTrend HD. Network requests: []
 # Processing MovieMAX: https://thetvapp.to/tv/moviemax-live-stream/
 # No valid .m3u8 URL found for MovieMAX. Network requests: []
 # Processing MSNBC: https://thetvapp.to/tv/msnbc-live-stream/
@@ -159,11 +159,11 @@
 # Processing NHL Network: https://thetvapp.to/tv/nhl-network-live-stream/
 # No valid .m3u8 URL found for NHL Network. Network requests: []
 # Processing Nick Jr.: https://thetvapp.to/tv/nick-jr-live-stream/
-# Successfully added Nick Jr. with URL: https://v4.thetvapp.to/hls/NickJrEast/tracks-v2a1/mono.m3u8?token=uEhQqmClfeyFvtaksFmlmQ&expires=1752339377&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# No valid .m3u8 URL found for Nick Jr.. Network requests: []
 # Processing Nickelodeon East: https://thetvapp.to/tv/nickelodeon-east-live-stream/
 # No valid .m3u8 URL found for Nickelodeon East. Network requests: []
 # Processing Nicktoons: https://thetvapp.to/tv/nicktoons-live-stream/
-# No valid .m3u8 URL found for Nicktoons. Network requests: []
+# Successfully added Nicktoons with URL: https://v5.thetvapp.to/hls/NicktoonsEast/tracks-v2a1/mono.m3u8?token=noZAz00rHjkVrhpEu-r0zQ&expires=1752347269&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing Outdoor Channel: https://thetvapp.to/tv/outdoor-channel-live-stream/
 # No valid .m3u8 URL found for Outdoor Channel. Network requests: []
 # Processing OWN: https://thetvapp.to/tv/own-live-stream/
@@ -171,7 +171,7 @@
 # Processing Oxygen True Crime: https://thetvapp.to/tv/oxygen-true-crime-live-stream/
 # No valid .m3u8 URL found for Oxygen True Crime. Network requests: []
 # Processing PBS 13 (WNET) New York: https://thetvapp.to/tv/pbs-13-wnet-new-york-live-stream/
-# No valid .m3u8 URL found for PBS 13 (WNET) New York. Network requests: []
+# Successfully added PBS 13 (WNET) New York with URL: https://v5.thetvapp.to/hls/WNET/tracks-v2a1/mono.m3u8?token=wV4La6h9MmRsb0ApXmeq0A&expires=1752347370&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing ReelzChannel: https://thetvapp.to/tv/reelzchannel-live-stream/
 # No valid .m3u8 URL found for ReelzChannel. Network requests: []
 # Processing Science: https://thetvapp.to/tv/science-live-stream/
@@ -179,13 +179,13 @@
 # Processing SEC Network: https://thetvapp.to/tv/sec-network-live-stream/
 # No valid .m3u8 URL found for SEC Network. Network requests: []
 # Processing Showtime (E): https://thetvapp.to/tv/showtime-e-live-stream/
-# Successfully added Showtime (E) with URL: https://v2.thetvapp.to/hls/ShowtimeEast/tracks-v2a1/mono.m3u8?token=CybO4HKyQm5Heeo40rg72A&expires=1752339628&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# Successfully added Showtime (E) with URL: https://v5.thetvapp.to/hls/ShowtimeEast/tracks-v2a1/mono.m3u8?token=P4j5UDVORo8qWWwxnfkwBw&expires=1752347467&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing SHOWTIME 2: https://thetvapp.to/tv/showtime-2-live-stream/
 # No valid .m3u8 URL found for SHOWTIME 2. Network requests: []
 # Processing STARZ East: https://thetvapp.to/tv/starz-east-live-stream/
 # No valid .m3u8 URL found for STARZ East. Network requests: []
 # Processing SundanceTV HD: https://thetvapp.to/tv/sundancetv-hd-live-stream/
-# Successfully added SundanceTV HD with URL: https://v12.thetvapp.to/hls/SundanceTVEast/tracks-v2a1/mono.m3u8?token=Ij3_0_ifbKEmpMnXlnBpsw&expires=1752339705&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# No valid .m3u8 URL found for SundanceTV HD. Network requests: []
 # Processing SYFY: https://thetvapp.to/tv/syfy-live-stream/
 # No valid .m3u8 URL found for SYFY. Network requests: []
 # Processing TBS: https://thetvapp.to/tv/tbs-live-stream/
@@ -207,7 +207,7 @@
 # Processing TLC: https://thetvapp.to/tv/tlc-live-stream/
 # No valid .m3u8 URL found for TLC. Network requests: []
 # Processing TNT: https://thetvapp.to/tv/tnt-live-stream/
-# No valid .m3u8 URL found for TNT. Network requests: []
+# Successfully added TNT with URL: https://v15.thetvapp.to/hls/TNTEast/tracks-v2a1/mono.m3u8?token=T4K5D-PYXpeFQhlbDW9DVg&expires=1752347817&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing Travel Channel: https://thetvapp.to/tv/travel-channel-live-stream/
 # No valid .m3u8 URL found for Travel Channel. Network requests: []
 # Processing truTV: https://thetvapp.to/tv/trutv-live-stream/
@@ -225,12 +225,12 @@
 # Processing VICE: https://thetvapp.to/tv/vice-live-stream/
 # No valid .m3u8 URL found for VICE. Network requests: []
 # Processing WABC (New York) ABC East: https://thetvapp.to/tv/wabc-new-york-abc-east-live-stream/
-# No valid .m3u8 URL found for WABC (New York) ABC East. Network requests: []
+# Successfully added WABC (New York) ABC East with URL: https://v13.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=sN9q15MsixVdvCMZp8ENSQ&expires=1752348042&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing WCBS (New York) CBS East: https://thetvapp.to/tv/wcbs-new-york-cbs-east-live-stream/
 # No valid .m3u8 URL found for WCBS (New York) CBS East. Network requests: []
 # Processing WE tv: https://thetvapp.to/tv/we-tv-live-stream/
 # No valid .m3u8 URL found for WE tv. Network requests: []
 # Processing WNBC (New York) NBC East: https://thetvapp.to/tv/wnbc-new-york-nbc-east-live-stream/
-# Successfully added WNBC (New York) NBC East with URL: https://v4.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=AnuO2tbUavta6-OI9TjKNQ&expires=1752340274&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+# Successfully added WNBC (New York) NBC East with URL: https://v12.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=h1U23NFGSoq_MdH60THjeA&expires=1752348114&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
 # Processing WNYW (New York) FOX East: https://thetvapp.to/tv/wnyw-new-york-fox-east-live-stream/
 # No valid .m3u8 URL found for WNYW (New York) FOX East. Network requests: []
