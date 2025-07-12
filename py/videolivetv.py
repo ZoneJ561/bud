@@ -29,7 +29,7 @@ channel_logos = {
     "BBC America": "https://cdn.tvpassport.com/image/station/240x135/v2/s18332_h15_aa.png",
     "BBC World News HD": "https://cdn.tvpassport.com/image/station/240x135/v2/s89542_h15_ab.png",
     "BET": "https://cdn.tvpassport.com/image/station/240x135/v2/s10051_h15_ad.png",
-    # Add more channels to match mikekaprielian’s .m3u
+    # Add more channels to match mikekaprielian’s .m3u if needed
 }
 
 # Initialize Chrome WebDriver
@@ -127,8 +127,12 @@ try:
                 # Wait for network requests to load
                 time.sleep(15)
 
+                # Clear performance entries to avoid old requests
+                driver.execute_script("performance.clearResourceTimings();")
+                time.sleep(1)
+
                 # Get network requests
-                network_requests = driver.execute_script("return JSON.stringify(performance.getEntries());")
+                network_requests = driver.execute_script("return JSON.stringify(performance.getEntriesByType('resource'));")
                 network_requests = json.loads(network_requests)
 
                 # Filter for .m3u8 URLs
