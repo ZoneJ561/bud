@@ -1,4 +1,4 @@
-<!-- Generated at: 2025-07-12 06:21:34 UTC -->
+<!-- Generated at: 2025-07-12 07:10:19 UTC -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv generator-info-name="TVPassport Scraper">
@@ -25,5 +25,332 @@
   </channel>
   <channel id="BET">
     <display-name>BET</display-name>
+  </channel>
+  <channel id="BET Her">
+    <display-name>BET Her</display-name>
+  </channel>
+  <channel id="Big Ten Network">
+    <display-name>Big Ten Network</display-name>
+  </channel>
+  <channel id="Bloomberg TV">
+    <display-name>Bloomberg TV</display-name>
+  </channel>
+  <channel id="Boomerang">
+    <display-name>Boomerang</display-name>
+  </channel>
+  <channel id="Bravo">
+    <display-name>Bravo</display-name>
+  </channel>
+  <channel id="Cartoon Network">
+    <display-name>Cartoon Network</display-name>
+  </channel>
+  <channel id="CBS Sports Network">
+    <display-name>CBS Sports Network</display-name>
+  </channel>
+  <channel id="Cinemax">
+    <display-name>Cinemax</display-name>
+  </channel>
+  <channel id="CMT">
+    <display-name>CMT</display-name>
+  </channel>
+  <channel id="CNBC">
+    <display-name>CNBC</display-name>
+  </channel>
+  <channel id="CNN">
+    <display-name>CNN</display-name>
+  </channel>
+  <channel id="Comedy Central">
+    <display-name>Comedy Central</display-name>
+  </channel>
+  <channel id="Cooking Channel">
+    <display-name>Cooking Channel</display-name>
+  </channel>
+  <channel id="CSPAN">
+    <display-name>CSPAN</display-name>
+  </channel>
+  <channel id="CSPAN 2">
+    <display-name>CSPAN 2</display-name>
+  </channel>
+  <channel id="Destination America">
+    <display-name>Destination America</display-name>
+  </channel>
+  <channel id="Discovery">
+    <display-name>Discovery</display-name>
+  </channel>
+  <channel id="Discovery Family Channel">
+    <display-name>Discovery Family Channel</display-name>
+  </channel>
+  <channel id="Discovery Life">
+    <display-name>Discovery Life</display-name>
+  </channel>
+  <channel id="Disney Channel (East)">
+    <display-name>Disney Channel (East)</display-name>
+  </channel>
+  <channel id="Disney Junior">
+    <display-name>Disney Junior</display-name>
+  </channel>
+  <channel id="Disney XD">
+    <display-name>Disney XD</display-name>
+  </channel>
+  <channel id="E!">
+    <display-name>E!</display-name>
+  </channel>
+  <channel id="ESPN">
+    <display-name>ESPN</display-name>
+  </channel>
+  <channel id="ESPN2">
+    <display-name>ESPN2</display-name>
+  </channel>
+  <channel id="ESPNews">
+    <display-name>ESPNews</display-name>
+  </channel>
+  <channel id="ESPNU">
+    <display-name>ESPNU</display-name>
+  </channel>
+  <channel id="Food Network">
+    <display-name>Food Network</display-name>
+  </channel>
+  <channel id="Fox Business Network">
+    <display-name>Fox Business Network</display-name>
+  </channel>
+  <channel id="FOX News Channel">
+    <display-name>FOX News Channel</display-name>
+  </channel>
+  <channel id="FOX Sports 1">
+    <display-name>FOX Sports 1</display-name>
+  </channel>
+  <channel id="FOX Sports 2">
+    <display-name>FOX Sports 2</display-name>
+  </channel>
+  <channel id="Freeform">
+    <display-name>Freeform</display-name>
+  </channel>
+  <channel id="Fuse HD">
+    <display-name>Fuse HD</display-name>
+  </channel>
+  <channel id="FX">
+    <display-name>FX</display-name>
+  </channel>
+  <channel id="FX Movie">
+    <display-name>FX Movie</display-name>
+  </channel>
+  <channel id="FXX">
+    <display-name>FXX</display-name>
+  </channel>
+  <channel id="FYI">
+    <display-name>FYI</display-name>
+  </channel>
+  <channel id="Golf Channel">
+    <display-name>Golf Channel</display-name>
+  </channel>
+  <channel id="Hallmark">
+    <display-name>Hallmark</display-name>
+  </channel>
+  <channel id="Hallmark Drama HD">
+    <display-name>Hallmark Drama HD</display-name>
+  </channel>
+  <channel id="Hallmark Movies & Mysteries HD">
+    <display-name>Hallmark Movies & Mysteries HD</display-name>
+  </channel>
+  <channel id="HBO 2 East">
+    <display-name>HBO 2 East</display-name>
+  </channel>
+  <channel id="HBO Comedy HD">
+    <display-name>HBO Comedy HD</display-name>
+  </channel>
+  <channel id="HBO East">
+    <display-name>HBO East</display-name>
+  </channel>
+  <channel id="HBO Family East">
+    <display-name>HBO Family East</display-name>
+  </channel>
+  <channel id="HBO Signature">
+    <display-name>HBO Signature</display-name>
+  </channel>
+  <channel id="HBO Zone HD">
+    <display-name>HBO Zone HD</display-name>
+  </channel>
+  <channel id="HGTV">
+    <display-name>HGTV</display-name>
+  </channel>
+  <channel id="History">
+    <display-name>History</display-name>
+  </channel>
+  <channel id="HLN">
+    <display-name>HLN</display-name>
+  </channel>
+  <channel id="IFC">
+    <display-name>IFC</display-name>
+  </channel>
+  <channel id="Investigation Discovery">
+    <display-name>Investigation Discovery</display-name>
+  </channel>
+  <channel id="ION Television East HD">
+    <display-name>ION Television East HD</display-name>
+  </channel>
+  <channel id="Lifetime">
+    <display-name>Lifetime</display-name>
+  </channel>
+  <channel id="LMN">
+    <display-name>LMN</display-name>
+  </channel>
+  <channel id="Logo">
+    <display-name>Logo</display-name>
+  </channel>
+  <channel id="MeTV Toons">
+    <display-name>MeTV Toons</display-name>
+  </channel>
+  <channel id="MLB Network">
+    <display-name>MLB Network</display-name>
+  </channel>
+  <channel id="MoreMAX">
+    <display-name>MoreMAX</display-name>
+  </channel>
+  <channel id="MotorTrend HD">
+    <display-name>MotorTrend HD</display-name>
+  </channel>
+  <channel id="MovieMAX">
+    <display-name>MovieMAX</display-name>
+  </channel>
+  <channel id="MSNBC">
+    <display-name>MSNBC</display-name>
+  </channel>
+  <channel id="MTV">
+    <display-name>MTV</display-name>
+  </channel>
+  <channel id="Nat Geo WILD">
+    <display-name>Nat Geo WILD</display-name>
+  </channel>
+  <channel id="National Geographic">
+    <display-name>National Geographic</display-name>
+  </channel>
+  <channel id="NBA TV">
+    <display-name>NBA TV</display-name>
+  </channel>
+  <channel id="Newsmax TV">
+    <display-name>Newsmax TV</display-name>
+  </channel>
+  <channel id="NFL Network">
+    <display-name>NFL Network</display-name>
+  </channel>
+  <channel id="NFL Red Zone">
+    <display-name>NFL Red Zone</display-name>
+  </channel>
+  <channel id="NHL Network">
+    <display-name>NHL Network</display-name>
+  </channel>
+  <channel id="Nick Jr.">
+    <display-name>Nick Jr.</display-name>
+  </channel>
+  <channel id="Nickelodeon East">
+    <display-name>Nickelodeon East</display-name>
+  </channel>
+  <channel id="Nicktoons">
+    <display-name>Nicktoons</display-name>
+  </channel>
+  <channel id="Outdoor Channel">
+    <display-name>Outdoor Channel</display-name>
+  </channel>
+  <channel id="OWN">
+    <display-name>OWN</display-name>
+  </channel>
+  <channel id="Oxygen True Crime">
+    <display-name>Oxygen True Crime</display-name>
+  </channel>
+  <channel id="PBS 13 (WNET) New York">
+    <display-name>PBS 13 (WNET) New York</display-name>
+  </channel>
+  <channel id="ReelzChannel">
+    <display-name>ReelzChannel</display-name>
+  </channel>
+  <channel id="Science">
+    <display-name>Science</display-name>
+  </channel>
+  <channel id="SEC Network">
+    <display-name>SEC Network</display-name>
+  </channel>
+  <channel id="Showtime (E)">
+    <display-name>Showtime (E)</display-name>
+  </channel>
+  <channel id="SHOWTIME 2">
+    <display-name>SHOWTIME 2</display-name>
+  </channel>
+  <channel id="STARZ East">
+    <display-name>STARZ East</display-name>
+  </channel>
+  <channel id="SundanceTV HD">
+    <display-name>SundanceTV HD</display-name>
+  </channel>
+  <channel id="SYFY">
+    <display-name>SYFY</display-name>
+  </channel>
+  <channel id="TBS">
+    <display-name>TBS</display-name>
+  </channel>
+  <channel id="TCM">
+    <display-name>TCM</display-name>
+  </channel>
+  <channel id="TeenNick">
+    <display-name>TeenNick</display-name>
+  </channel>
+  <channel id="Telemundo East">
+    <display-name>Telemundo East</display-name>
+  </channel>
+  <channel id="Tennis Channel">
+    <display-name>Tennis Channel</display-name>
+  </channel>
+  <channel id="The CW (WPIX New York)">
+    <display-name>The CW (WPIX New York)</display-name>
+  </channel>
+  <channel id="The Movie Channel East">
+    <display-name>The Movie Channel East</display-name>
+  </channel>
+  <channel id="The Weather Channel">
+    <display-name>The Weather Channel</display-name>
+  </channel>
+  <channel id="TLC">
+    <display-name>TLC</display-name>
+  </channel>
+  <channel id="TNT">
+    <display-name>TNT</display-name>
+  </channel>
+  <channel id="Travel Channel">
+    <display-name>Travel Channel</display-name>
+  </channel>
+  <channel id="truTV">
+    <display-name>truTV</display-name>
+  </channel>
+  <channel id="TV One HD">
+    <display-name>TV One HD</display-name>
+  </channel>
+  <channel id="Universal Kids">
+    <display-name>Universal Kids</display-name>
+  </channel>
+  <channel id="Univision East">
+    <display-name>Univision East</display-name>
+  </channel>
+  <channel id="USA Network">
+    <display-name>USA Network</display-name>
+  </channel>
+  <channel id="VH1">
+    <display-name>VH1</display-name>
+  </channel>
+  <channel id="VICE">
+    <display-name>VICE</display-name>
+  </channel>
+  <channel id="WABC (New York) ABC East">
+    <display-name>WABC (New York) ABC East</display-name>
+  </channel>
+  <channel id="WCBS (New York) CBS East">
+    <display-name>WCBS (New York) CBS East</display-name>
+  </channel>
+  <channel id="WE tv">
+    <display-name>WE tv</display-name>
+  </channel>
+  <channel id="WNBC (New York) NBC East">
+    <display-name>WNBC (New York) NBC East</display-name>
+  </channel>
+  <channel id="WNYW (New York) FOX East">
+    <display-name>WNYW (New York) FOX East</display-name>
   </channel>
 </tv>

@@ -1,45 +1,10 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml"
-# Last Updated: 2025-07-12 06:22:02 UTC
-#EXTINF:-1 group-title="USA TV" tvg-ID="BBC America" tvg-name="BBC America" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s18332_h15_aa.png",BBC America
-#EXTINF:-1 group-title="USA TV" tvg-ID="BBC World News HD" tvg-name="BBC World News HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89542_h15_ab.png",BBC World News HD
-#EXTINF:-1 group-title="USA TV" tvg-ID="BET Her" tvg-name="BET Her" tvg-logo="",BET Her
-#EXTINF:-1 group-title="USA TV" tvg-ID="Big Ten Network" tvg-name="Big Ten Network" tvg-logo="",Big Ten Network
-#EXTINF:-1 group-title="USA TV" tvg-ID="Boomerang" tvg-name="Boomerang" tvg-logo="",Boomerang
-#EXTINF:-1 group-title="USA TV" tvg-ID="Bravo" tvg-name="Bravo" tvg-logo="",Bravo
-#EXTINF:-1 group-title="USA TV" tvg-ID="CMT" tvg-name="CMT" tvg-logo="",CMT
-#EXTINF:-1 group-title="USA TV" tvg-ID="CNBC" tvg-name="CNBC" tvg-logo="",CNBC
-#EXTINF:-1 group-title="USA TV" tvg-ID="CNN" tvg-name="CNN" tvg-logo="",CNN
-#EXTINF:-1 group-title="USA TV" tvg-ID="CSPAN 2" tvg-name="CSPAN 2" tvg-logo="",CSPAN 2
-#EXTINF:-1 group-title="USA TV" tvg-ID="Comedy Central" tvg-name="Comedy Central" tvg-logo="",Comedy Central
-#EXTINF:-1 group-title="USA TV" tvg-ID="Cooking Channel" tvg-name="Cooking Channel" tvg-logo="",Cooking Channel
-#EXTINF:-1 group-title="USA TV" tvg-ID="E!" tvg-name="E!" tvg-logo="",E!
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPN" tvg-name="ESPN" tvg-logo="",ESPN
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPN2" tvg-name="ESPN2" tvg-logo="",ESPN2
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNews" tvg-name="ESPNews" tvg-logo="",ESPNews
-#EXTINF:-1 group-title="USA TV" tvg-ID="FX" tvg-name="FX" tvg-logo="",FX
-#EXTINF:-1 group-title="USA TV" tvg-ID="FX Movie" tvg-name="FX Movie" tvg-logo="",FX Movie
-#EXTINF:-1 group-title="USA TV" tvg-ID="FXX" tvg-name="FXX" tvg-logo="",FXX
-#EXTINF:-1 group-title="USA TV" tvg-ID="FYI" tvg-name="FYI" tvg-logo="",FYI
-#EXTINF:-1 group-title="USA TV" tvg-ID="HBO 2 East" tvg-name="HBO 2 East" tvg-logo="",HBO 2 East
-#EXTINF:-1 group-title="USA TV" tvg-ID="HBO East" tvg-name="HBO East" tvg-logo="",HBO East
-#EXTINF:-1 group-title="USA TV" tvg-ID="HLN" tvg-name="HLN" tvg-logo="",HLN
-#EXTINF:-1 group-title="USA TV" tvg-ID="History" tvg-name="History" tvg-logo="",History
-#EXTINF:-1 group-title="USA TV" tvg-ID="IFC" tvg-name="IFC" tvg-logo="",IFC
-#EXTINF:-1 group-title="USA TV" tvg-ID="MLB Network" tvg-name="MLB Network" tvg-logo="",MLB Network
-#EXTINF:-1 group-title="USA TV" tvg-ID="MTV" tvg-name="MTV" tvg-logo="",MTV
-#EXTINF:-1 group-title="USA TV" tvg-ID="MoreMAX" tvg-name="MoreMAX" tvg-logo="",MoreMAX
-#EXTINF:-1 group-title="USA TV" tvg-ID="MotorTrend HD" tvg-name="MotorTrend HD" tvg-logo="",MotorTrend HD
-#EXTINF:-1 group-title="USA TV" tvg-ID="MovieMAX" tvg-name="MovieMAX" tvg-logo="",MovieMAX
-#EXTINF:-1 group-title="USA TV" tvg-ID="NBA TV" tvg-name="NBA TV" tvg-logo="",NBA TV
-#EXTINF:-1 group-title="USA TV" tvg-ID="Nicktoons" tvg-name="Nicktoons" tvg-logo="",Nicktoons
-#EXTINF:-1 group-title="USA TV" tvg-ID="PBS 13 (WNET) New York" tvg-name="PBS 13 (WNET) New York" tvg-logo="",PBS 13 (WNET) New York
-#EXTINF:-1 group-title="USA TV" tvg-ID="ReelzChannel" tvg-name="ReelzChannel" tvg-logo="",ReelzChannel
-#EXTINF:-1 group-title="USA TV" tvg-ID="Science" tvg-name="Science" tvg-logo="",Science
-#EXTINF:-1 group-title="USA TV" tvg-ID="SundanceTV HD" tvg-name="SundanceTV HD" tvg-logo="",SundanceTV HD
-#EXTINF:-1 group-title="USA TV" tvg-ID="TeenNick" tvg-name="TeenNick" tvg-logo="",TeenNick
-#EXTINF:-1 group-title="USA TV" tvg-ID="Tennis Channel" tvg-name="Tennis Channel" tvg-logo="",Tennis Channel
-#EXTINF:-1 group-title="USA TV" tvg-ID="The CW (WPIX New York)" tvg-name="The CW (WPIX New York)" tvg-logo="",The CW (WPIX New York)
-#EXTINF:-1 group-title="USA TV" tvg-ID="The Movie Channel East" tvg-name="The Movie Channel East" tvg-logo="",The Movie Channel East
-#EXTINF:-1 group-title="USA TV" tvg-ID="Travel Channel" tvg-name="Travel Channel" tvg-logo="",Travel Channel
-#EXTINF:-1 group-title="USA TV" tvg-ID="USA Network" tvg-name="USA Network" tvg-logo="",USA Network
-#EXTINF:-1 group-title="USA TV" tvg-ID="Universal Kids" tvg-name="Universal Kids" tvg-logo="",Universal Kids
+# Last Updated: 2025-07-12 07:22:04 UTC
+#EXTINF:-1 group-title="USA TV" tvg-ID="Disney Junior" tvg-name="Disney Junior" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10065_h15_aa.png",Disney Junior
+#EXTINF:-1 group-title="USA TV" tvg-ID="ESPN" tvg-name="ESPN" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10068_h15_aa.png",ESPN
+#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNU" tvg-name="ESPNU" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111909_h15_aa.png",ESPNU
+#EXTINF:-1 group-title="USA TV" tvg-ID="FX" tvg-name="FX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10074_h15_aa.png",FX
+#EXTINF:-1 group-title="USA TV" tvg-ID="Hallmark" tvg-name="Hallmark" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10078_h15_aa.png",Hallmark
+#EXTINF:-1 group-title="USA TV" tvg-ID="Lifetime" tvg-name="Lifetime" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10089_h15_aa.png",Lifetime
+#EXTINF:-1 group-title="USA TV" tvg-ID="SEC Network" tvg-name="SEC Network" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111917_h15_aa.png",SEC Network
+#EXTINF:-1 group-title="USA TV" tvg-ID="The Movie Channel East" tvg-name="The Movie Channel East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10119_h15_aa.png",The Movie Channel East
