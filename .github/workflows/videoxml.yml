@@ -58,10 +58,23 @@ jobs:
           # Save raw output for debugging
           python py/videolivetv.py > en/raw_output.txt 2> en/raw_errors.txt
           
-          # Filter output, keeping only valid #EXTINF and URL pairs
-          cat en/raw_output.txt | grep -v -E '^<|^$|^\s*$|github\.com.*offline\.mp4|jwplayer6/ping|thetvapp\.to/v1/' | \
-          awk '/^#EXTINF/ {if (p) print p; p=$0; next} p && !/^#/ && !/github\.com/ && /\.m3u8$/ {print p; print; p=""} END {if (p) print "# Skipped incomplete entry: " p > "/dev/stderr"}' | \
-          sort -t'"' -k4,4 -u >> en/videoall.m3u
+          # Filter output and extract .m3u8 URLs from ping.gif mu parameters
+          cat en/raw_output.txt | grep -v -E '^<|^$|^\s*$|jwplayer6/ping' | \
+          awk '
+          BEGIN { p="" }
+          /^#EXTINF/ { if (p) print p; p=$0; next }
+          p && !/^#/ && /\.m3u8$/ { print p; print; p=""; next }
+          p && !/^#/ && /ping\.gif/ && /mu=/ {
+            match($0, /mu=([^&]+)/, arr);
+            if (arr[1] && arr[1] ~ /\.m3u8$/) {
+              print p;
+              print arr[1];
+              p="";
+            }
+            next
+          }
+          END { if (p) print "# Skipped incomplete entry: " p > "/dev/stderr" }
+          ' | sort -t'"' -k4,4 -u >> en/videoall.m3u
           
           # Create a copy
           cp en/videoall.m3u en/videolivetv.m3u
