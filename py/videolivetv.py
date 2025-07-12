@@ -9,6 +9,7 @@ from webdriver_manager.core.os_manager import ChromeType
 import random
 import time
 import json
+import sys
 
 
 user_agents = [
@@ -214,52 +215,54 @@ print("#EXTM3U")
 
 # Iterate over each live TV channel link
 for name, link in live_tv_links:
-    # Navigate to the link URL
-    driver.get(link)
-
+    # Initialize variables for this iteration
+    m3u8_url = None
+    logo_url = channel_logos.get(name, "")  # Get logo URL or empty string if not found
+    
     try:
-        # Wait for the button to be clickable
-        wait = WebDriverWait(driver, 5)
+        # Navigate to the link URL
+        driver.get(link)
+
         try:
-            # Try to find loadVideoBtnOne first
-            video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtn')))
-        except:
-            # If loadVideoBtnOne is not found, look for loadVideoBtnTwo
-            video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtnTwo')))
-        video_button.click()
+            # Wait for the button to be clickable
+            wait = WebDriverWait(driver, 5)
+            try:
+                # Try to find loadVideoBtn first
+                video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtn')))
+            except:
+                # If loadVideoBtn is not found, look for loadVideoBtnTwo
+                video_button = wait.until(EC.element_to_be_clickable((By.ID, 'loadVideoBtnTwo')))
+            video_button.click()
 
-        # Wait for a brief period to allow the page to load and network requests to be made
-        time.sleep(5)
+            # Wait for a brief period to allow the page to load and network requests to be made
+            time.sleep(5)
 
-        # Get all network requests
-        network_requests = driver.execute_script("return JSON.stringify(performance.getEntries());")
+            # Get all network requests
+            network_requests = driver.execute_script("return JSON.stringify(performance.getEntries());")
 
-        # Convert the string back to a list of dictionaries in Python
-        network_requests = json.loads(network_requests)
+            # Convert the string back to a list of dictionaries in Python
+            network_requests = json.loads(network_requests)
 
-        # Get the logo URL for the current channel
-        logo_url = channel_logos.get(name)
+            # Filter out only the URLs containing ".m3u8"
+            m3u8_urls = [request["name"] for request in network_requests if ".m3u8" in request["name"]]
 
-
-        # Filter out only the URLs containing ".m3u8"
-        m3u8_urls = [request["name"] for request in network_requests if ".m3u8" in request["name"]]
-
-        # Print the collected m3u8 URLs
-        if m3u8_urls:
-            m3u8_url = m3u8_urls[0]
-        else:
+            if m3u8_urls:
+                m3u8_url = m3u8_urls[0]
+            else:
+                m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"
+                
+        except Exception as e:
+            # If an exception occurs, use the default link
             m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"
-    except Exception as e:
-        # If an exception occurs (e.g., button not found), use the default link
-        m3u8_url = "https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4"
-
-    # Print the collected m3u8 URL
-    if m3u8_urls:
+            
+        # Always print the channel info and URL (even if it's the offline URL)
         print(f"#EXTINF:-1 group-title=\"USA TV\" tvg-ID=\"{name}\" tvg-name=\"{name}\" tvg-logo=\"{logo_url}\", {name}")
-        print(m3u8_url)  # Print only the first m3u8 URL
-
+        print(m3u8_url)
+        
+    except Exception as e:
+        # If we can't even load the page, log the error but continue with the next channel
+        print(f"# Error processing {name}: {str(e)}", file=sys.stderr)
+        continue
 
 # Close the WebDriver
 driver.quit()
-
-
