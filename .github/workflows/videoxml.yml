@@ -17,23 +17,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Set up Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # Install Python dependencies
       - name: Install Python packages
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 pytz selenium webdriver-manager selenium-stealth
 
-      # Set up Chrome for Selenium
       - name: Set up Chrome
         run: |
           sudo apt-get update
@@ -43,52 +39,51 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends google-chrome-stable
 
-      # Generate XML EPG file with current timestamp
       - name: Generate XML EPG
         run: |
           mkdir -p en
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
           echo "<!-- Generated at: $TIMESTAMP -->" > en/videoall.xml
-          python py/videoxml.py >> en/videoall.xml
+          python py/videoxml.py >> en/videoall.xml 2> en/xml_errors.txt
 
-      # Generate M3U playlists with current timestamp
       - name: Generate M3U Playlists
         run: |
           mkdir -p en
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
           
-          # Generate the M3U file with timestamp and proper headers
-          echo "#EXTM3U" > en/videoall.m3u
+          # Generate the M3U file with timestamp
+          echo "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml\"" > en/videoall.m3u
           echo "# Last Updated: $TIMESTAMP" >> en/videoall.m3u
           
-          # Run the script and clean up the output while preserving EXTINF tags and their corresponding URLs
-          python py/videolivetv.py | grep -v -E '^<|^$|^\s*$|jwplayer6/ping|thetvapp\\.to/v1/' | \
-          awk '/^#EXTINF/ {print; getline; print}' | sort -t'"' -k4,4 -u >> en/videoall.m3u
+          # Save raw output for debugging
+          python py/videolivetv.py > en/raw_output.txt 2> en/raw_errors.txt
           
-          # Create a copy with alternative name
+          # Filter output, keeping only valid #EXTINF and URL pairs
+          cat en/raw_output.txt | grep -v -E '^<|^$|^\s*$|github\.com.*offline\.mp4|jwplayer6/ping|thetvapp\.to/v1/' | \
+          awk '/^#EXTINF/ {if (p) print p; p=$0; next} p && !/^#/ && /\.m3u8$/ {print p; print; p=""} END {if (p) print "# Skipped incomplete entry: " p > "/dev/stderr"}' | \
+          sort -t'"' -k4,4 -u >> en/videoall.m3u
+          
+          # Create a copy
           cp en/videoall.m3u en/videolivetv.m3u
           
           # Verify the files
           echo "Generated files:"
           ls -la en/
-          echo "\nFirst few lines of videoall.m3u:"
-          head -n 10 en/videoall.m3u || true
+          echo "\nRaw output (first 20 lines):"
+          head -n 20 en/raw_output.txt || true
+          echo "\nRaw errors:"
+          cat en/raw_errors.txt || true
+          echo "\nXML errors:"
+          cat en/xml_errors.txt || true
+          echo "\nFirst 20 lines of videoall.m3u:"
+          head -n 20 en/videoall.m3u || true
 
-      # Force commit and push updates
       - name: Force commit and push updates
         run: |
-          # Configure git
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # Get current timestamp
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          
-          # Add and force commit
-          git add en/videoall.xml en/videoall.m3u en/videolivetv.m3u
+          git add en/videoall.xml en/videoall.m3u en/videolivetv.m3u en/raw_output.txt en/raw_errors.txt en/xml_errors.txt
           git commit -m "Auto-update TV guide and playlists - $TIMESTAMP" --allow-empty
-          
-          # Force push to update the branch
-          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
-          
+          git push
           echo "Files updated and pushed at $TIMESTAMP"
