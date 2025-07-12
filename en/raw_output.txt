@@ -1,33 +1,19 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml"
-#EXTINF:-1 group-title="USA TV" tvg-ID="CSPAN 2" tvg-name="CSPAN 2" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10062_h15_aa.png",CSPAN 2
-https://v1.thetvapp.to/hls/CSPAN2/tracks-v2a1/mono.m3u8?token=d7oON_ta_hfwDA5ufDVSUg&expires=1752330917&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="Disney XD" tvg-name="Disney XD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10066_h15_aa.png",Disney XD
-https://v18.thetvapp.to/hls/DisneyXDEast/tracks-v2a1/mono.m3u8?token=feUK0bjITK2WXkb3rLFpfQ&expires=1752331092&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNews" tvg-name="ESPNews" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111908_h15_aa.png",ESPNews
-https://v16.thetvapp.to/hls/ESPNews/tracks-v2a1/mono.m3u8?token=FLftKiPb_ET14JJB8n0kGg&expires=1752331190&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="FXX" tvg-name="FXX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10076_h15_aa.png",FXX
-https://v14.thetvapp.to/hls/FXXEast/tracks-v2a1/mono.m3u8?token=npSPAeiHyqYAWbMcR8MSnA&expires=1752331461&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="BET" tvg-name="BET" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10051_h15_ad.png",BET
+https://v17.thetvapp.to/hls/BETEast/tracks-v2a1/mono.m3u8?token=SJ5mu3JFxxX-GRE4PrB3eg&expires=1752337600&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Freeform" tvg-name="Freeform" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10073_h15_aa.png",Freeform
+https://v2.thetvapp.to/hls/FreeformEast/tracks-v2a1/mono.m3u8?token=BScW1prfizLqB2SEXxzJyA&expires=1752338412&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Hallmark" tvg-name="Hallmark" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10078_h15_aa.png",Hallmark
+https://v5.thetvapp.to/hls/HallmarkChannelEast/tracks-v2a1/mono.m3u8?token=XmA82AytAwTsUjTAASVvnQ&expires=1752338585&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
 #EXTINF:-1 group-title="USA TV" tvg-ID="HBO East" tvg-name="HBO East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10080_h15_aa.png",HBO East
-https://v3.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=yoCxKMmSe_9lY9aqzf94Sw&expires=1752331656&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="HBO Zone HD" tvg-name="HBO Zone HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89547_h15_aa.png",HBO Zone HD
-https://v12.thetvapp.to/hls/HBOZoneEast/tracks-v2a1/mono.m3u8?token=z2FYcIltkm1oXiR3dDgRnQ&expires=1752331732&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="HGTV" tvg-name="HGTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10083_h15_aa.png",HGTV
-https://v15.thetvapp.to/hls/HGTVEast/tracks-v2a1/mono.m3u8?token=jIHnS29erCrzuQGsmQY6QA&expires=1752331758&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="MeTV Toons" tvg-name="MeTV Toons" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89548_h15_aa.png",MeTV Toons
-https://v5.thetvapp.to/hls/metv-toons/tracks-v2a1/mono.m3u8?token=m2sWZgqLlVMNio7mlMLgwA&expires=1752331980&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="MovieMAX" tvg-name="MovieMAX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10094_h15_aa.png",MovieMAX
-https://v17.thetvapp.to/hls/MovieMaxEast/tracks-v2a1/mono.m3u8?token=_xRV5m-pth0X_Eg2NjaJjA&expires=1752332077&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="NFL Network" tvg-name="NFL Network" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111914_h15_aa.png",NFL Network
-https://v1.thetvapp.to/hls/NFLNetwork/tracks-v2a1/mono.m3u8?token=r7LczkdEepAwMSTTQk6dsg&expires=1752332247&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="OWN" tvg-name="OWN" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10104_h15_aa.png",OWN
-https://v5.thetvapp.to/hls/OWNEast/tracks-v2a1/mono.m3u8?token=XHLnvTFwRx66EmXof5AFDQ&expires=1752332416&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="SYFY" tvg-name="SYFY" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10113_h15_aa.png",SYFY
-https://v14.thetvapp.to/hls/SyfyEast/tracks-v2a1/mono.m3u8?token=t940GMCEAA4uD7R_VszEPw&expires=1752332662&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="TeenNick" tvg-name="TeenNick" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10116_h15_aa.png",TeenNick
-https://v2.thetvapp.to/hls/TeenNickEast/tracks-v2a1/mono.m3u8?token=kSVbPwVgninH0AtsFOHCRA&expires=1752332736&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="truTV" tvg-name="truTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10124_h15_aa.png",truTV
-https://v5.thetvapp.to/hls/truTVEast/tracks-v2a1/mono.m3u8?token=VeFWYV281FEZKeE4aTquMQ&expires=1752332957&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
-#EXTINF:-1 group-title="USA TV" tvg-ID="WABC (New York) ABC East" tvg-name="WABC (New York) ABC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10130_h15_aa.png",WABC (New York) ABC East
-https://v4.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=s_TfTrhp1nH53KlXDwAknQ&expires=1752333130&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
+https://v12.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=OxC2eCjaKR8vTNQR82fbMA&expires=1752338711&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="MotorTrend HD" tvg-name="MotorTrend HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10093_h15_aa.png",MotorTrend HD
+https://v13.thetvapp.to/hls/Motortrend/tracks-v2a1/mono.m3u8?token=m5WfkOFDAS9_JARFyEJYMw&expires=1752339111&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Nick Jr." tvg-name="Nick Jr." tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10100_h15_aa.png",Nick Jr.
+https://v4.thetvapp.to/hls/NickJrEast/tracks-v2a1/mono.m3u8?token=uEhQqmClfeyFvtaksFmlmQ&expires=1752339377&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Showtime (E)" tvg-name="Showtime (E)" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10109_h15_aa.png",Showtime (E)
+https://v2.thetvapp.to/hls/ShowtimeEast/tracks-v2a1/mono.m3u8?token=CybO4HKyQm5Heeo40rg72A&expires=1752339628&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
+#EXTINF:-1 group-title="USA TV" tvg-ID="SundanceTV HD" tvg-name="SundanceTV HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10112_h15_aa.png",SundanceTV HD
+https://v12.thetvapp.to/hls/SundanceTVEast/tracks-v2a1/mono.m3u8?token=Ij3_0_ifbKEmpMnXlnBpsw&expires=1752339705&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
 #EXTINF:-1 group-title="USA TV" tvg-ID="WNBC (New York) NBC East" tvg-name="WNBC (New York) NBC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10133_h15_aa.png",WNBC (New York) NBC East
-https://v16.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=BguPrauY-HBWnrNeMJ3q8Q&expires=1752333204&user_id=UHhrbWxPRTRXM1VsSm9BVzZJTHRkUGE1SzZLSjBlVmJNV3BEV3Rncw==
+https://v4.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=AnuO2tbUavta6-OI9TjKNQ&expires=1752340274&user_id=YUh6aUhFTHBTY2k3WkpUMTIxYlJ2SlJHRTc2TUVuZ3gzVnBNdXRMbw==
