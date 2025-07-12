@@ -1,31 +1,25 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml"
-#EXTINF:-1 group-title="USA TV" tvg-ID="A&E" tvg-name="A&E" tvg-logo="https://cdn.tvpassport.com/image/station/960x540/v2/s10036_h15_aa.png",A&E
-https://v16.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=3QyFOjF-3DXJKDs6XNAsWQ&expires=1752345265&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="CNBC" tvg-name="CNBC" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10058_h15_aa.png",CNBC
-https://v5.thetvapp.to/hls/CNBC/tracks-v2a1/mono.m3u8?token=VxFoY9MDaCVFwr1OQpDt2g&expires=1752345691&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="Disney XD" tvg-name="Disney XD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10066_h15_aa.png",Disney XD
-https://v15.thetvapp.to/hls/DisneyXDEast/tracks-v2a1/mono.m3u8?token=uPFMJVVnJ3evTjCR98U5Bg&expires=1752345982&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="E!" tvg-name="E!" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10067_h15_aa.png",E!
-https://v4.thetvapp.to/hls/EEast/tracks-v2a1/mono.m3u8?token=fsSr6QkRaDB4pvaEojikgw&expires=1752346008&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNews" tvg-name="ESPNews" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111908_h15_aa.png",ESPNews
-https://v15.thetvapp.to/hls/ESPNews/tracks-v2a1/mono.m3u8?token=Qkb-8xlgWMtrmH9h7Te7Qg&expires=1752346082&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="Freeform" tvg-name="Freeform" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10073_h15_aa.png",Freeform
-https://v12.thetvapp.to/hls/FreeformEast/tracks-v2a1/mono.m3u8?token=MUQnoMecUIUTRsUJ8ASRow&expires=1752346257&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="FX" tvg-name="FX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10074_h15_aa.png",FX
-https://v17.thetvapp.to/hls/FXEast/tracks-v2a1/mono.m3u8?token=3KTPWJzCkkHS2R0qLOijUQ&expires=1752346307&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
+#EXTINF:-1 group-title="USA TV" tvg-ID="American Heroes Channel" tvg-name="American Heroes Channel" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s18284_h15_aa.png",American Heroes Channel
+https://v4.thetvapp.to/hls/AmericanHeroesChannel/tracks-v2a1/mono.m3u8?token=JCwqlOOsi1RdrHebrWpUFQ&expires=1752351907&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="CSPAN 2" tvg-name="CSPAN 2" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10062_h15_aa.png",CSPAN 2
+https://v13.thetvapp.to/hls/CSPAN2/tracks-v2a1/mono.m3u8?token=iaJHHuZXbKXtd_t8s7zpzg&expires=1752352372&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Discovery Family Channel" tvg-name="Discovery Family Channel" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s18287_h15_aa.png",Discovery Family Channel
+https://v8.thetvapp.to/hls/DiscoveryFamily/tracks-v2a1/mono.m3u8?token=wh-vxXc3IBT8ENYG8ojIlw&expires=1752352449&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Hallmark Movies & Mysteries HD" tvg-name="Hallmark Movies & Mysteries HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89545_h15_aa.png",Hallmark Movies & Mysteries HD
+https://v2.thetvapp.to/hls/HallmarkMoviesMysteriesEast/tracks-v2a1/mono.m3u8?token=slOp4A4RboMHfbguo8acTA&expires=1752353044&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
 #EXTINF:-1 group-title="USA TV" tvg-ID="HBO East" tvg-name="HBO East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10080_h15_aa.png",HBO East
-https://v3.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=yqYlmz_0ZSSaEwDvI9MOtw&expires=1752346555&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="MoreMAX" tvg-name="MoreMAX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10092_h15_aa.png",MoreMAX
-https://v1.thetvapp.to/hls/MoreMaxEast/tracks-v2a1/mono.m3u8?token=jriI_EqoCQVX3gmqDziGkw&expires=1752346923&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
+https://v15.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=DNr_t_hXM2ErfFZfxPJ-yw&expires=1752353121&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="HBO Zone HD" tvg-name="HBO Zone HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89547_h15_aa.png",HBO Zone HD
+https://v5.thetvapp.to/hls/HBOZoneEast/tracks-v2a1/mono.m3u8?token=kRG8mxBTtguJ9WCVXFhfiA&expires=1752353193&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="HGTV" tvg-name="HGTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10083_h15_aa.png",HGTV
+https://v15.thetvapp.to/hls/HGTVEast/tracks-v2a1/mono.m3u8?token=qottxq0jRKQBqywa5Hbs2A&expires=1752353217&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="Nat Geo WILD" tvg-name="Nat Geo WILD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10097_h15_aa.png",Nat Geo WILD
+https://v5.thetvapp.to/hls/NationalGeographicWildEast/tracks-v2a1/mono.m3u8?token=KB5Vx4iktuZxYYXsA61uGg&expires=1752353618&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
 #EXTINF:-1 group-title="USA TV" tvg-ID="Nicktoons" tvg-name="Nicktoons" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10102_h15_aa.png",Nicktoons
-https://v5.thetvapp.to/hls/NicktoonsEast/tracks-v2a1/mono.m3u8?token=noZAz00rHjkVrhpEu-r0zQ&expires=1752347269&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="PBS 13 (WNET) New York" tvg-name="PBS 13 (WNET) New York" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10106_h15_aa.png",PBS 13 (WNET) New York
-https://v5.thetvapp.to/hls/WNET/tracks-v2a1/mono.m3u8?token=wV4La6h9MmRsb0ApXmeq0A&expires=1752347370&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="Showtime (E)" tvg-name="Showtime (E)" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10109_h15_aa.png",Showtime (E)
-https://v5.thetvapp.to/hls/ShowtimeEast/tracks-v2a1/mono.m3u8?token=P4j5UDVORo8qWWwxnfkwBw&expires=1752347467&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
+https://v15.thetvapp.to/hls/NicktoonsEast/tracks-v2a1/mono.m3u8?token=r7k0OZehLuqOlH1Ub3NKLg&expires=1752353841&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
 #EXTINF:-1 group-title="USA TV" tvg-ID="TNT" tvg-name="TNT" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10122_h15_aa.png",TNT
-https://v15.thetvapp.to/hls/TNTEast/tracks-v2a1/mono.m3u8?token=T4K5D-PYXpeFQhlbDW9DVg&expires=1752347817&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
+https://v1.thetvapp.to/hls/TNTEast/tracks-v2a1/mono.m3u8?token=qgAiJunBN5YUwpSxcn8eMA&expires=1752354389&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
 #EXTINF:-1 group-title="USA TV" tvg-ID="WABC (New York) ABC East" tvg-name="WABC (New York) ABC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10130_h15_aa.png",WABC (New York) ABC East
-https://v13.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=sN9q15MsixVdvCMZp8ENSQ&expires=1752348042&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
-#EXTINF:-1 group-title="USA TV" tvg-ID="WNBC (New York) NBC East" tvg-name="WNBC (New York) NBC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10133_h15_aa.png",WNBC (New York) NBC East
-https://v12.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=h1U23NFGSoq_MdH60THjeA&expires=1752348114&user_id=d004dFF2ZkMwb3VXNXI5ZlRoZG5YM215Nzh0R212Y0dMcjVER1A5eg==
+https://v17.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=zUYjyzy4mHs1BfCokGjxBw&expires=1752354611&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==
+#EXTINF:-1 group-title="USA TV" tvg-ID="WCBS (New York) CBS East" tvg-name="WCBS (New York) CBS East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10131_h15_aa.png",WCBS (New York) CBS East
+https://v18.thetvapp.to/hls/WCBSDT1/tracks-v2a1/mono.m3u8?token=gHXV-iMYt4Idpu7mg7im5A&expires=1752354636&user_id=VlRXRUlHem9ia0hBUkphbDlGTHNNZDB1cXUxYmdINzdabWtUV0YzaQ==

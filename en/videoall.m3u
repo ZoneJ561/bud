@@ -1,16 +1,13 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml"
-# Last Updated: 2025-07-12 12:34:15 UTC
-#EXTINF:-1 group-title="USA TV" tvg-ID="A&E" tvg-name="A&E" tvg-logo="https://cdn.tvpassport.com/image/station/960x540/v2/s10036_h15_aa.png",A&E
-#EXTINF:-1 group-title="USA TV" tvg-ID="CNBC" tvg-name="CNBC" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10058_h15_aa.png",CNBC
-#EXTINF:-1 group-title="USA TV" tvg-ID="Disney XD" tvg-name="Disney XD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10066_h15_aa.png",Disney XD
-#EXTINF:-1 group-title="USA TV" tvg-ID="E!" tvg-name="E!" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10067_h15_aa.png",E!
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNews" tvg-name="ESPNews" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111908_h15_aa.png",ESPNews
-#EXTINF:-1 group-title="USA TV" tvg-ID="FX" tvg-name="FX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10074_h15_aa.png",FX
-#EXTINF:-1 group-title="USA TV" tvg-ID="Freeform" tvg-name="Freeform" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10073_h15_aa.png",Freeform
+# Last Updated: 2025-07-12 14:23:37 UTC
+#EXTINF:-1 group-title="USA TV" tvg-ID="American Heroes Channel" tvg-name="American Heroes Channel" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s18284_h15_aa.png",American Heroes Channel
+#EXTINF:-1 group-title="USA TV" tvg-ID="CSPAN 2" tvg-name="CSPAN 2" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10062_h15_aa.png",CSPAN 2
+#EXTINF:-1 group-title="USA TV" tvg-ID="Discovery Family Channel" tvg-name="Discovery Family Channel" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s18287_h15_aa.png",Discovery Family Channel
 #EXTINF:-1 group-title="USA TV" tvg-ID="HBO East" tvg-name="HBO East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10080_h15_aa.png",HBO East
-#EXTINF:-1 group-title="USA TV" tvg-ID="MoreMAX" tvg-name="MoreMAX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10092_h15_aa.png",MoreMAX
+#EXTINF:-1 group-title="USA TV" tvg-ID="HBO Zone HD" tvg-name="HBO Zone HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89547_h15_aa.png",HBO Zone HD
+#EXTINF:-1 group-title="USA TV" tvg-ID="HGTV" tvg-name="HGTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10083_h15_aa.png",HGTV
+#EXTINF:-1 group-title="USA TV" tvg-ID="Hallmark Movies & Mysteries HD" tvg-name="Hallmark Movies & Mysteries HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89545_h15_aa.png",Hallmark Movies & Mysteries HD
+#EXTINF:-1 group-title="USA TV" tvg-ID="Nat Geo WILD" tvg-name="Nat Geo WILD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10097_h15_aa.png",Nat Geo WILD
 #EXTINF:-1 group-title="USA TV" tvg-ID="Nicktoons" tvg-name="Nicktoons" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10102_h15_aa.png",Nicktoons
-#EXTINF:-1 group-title="USA TV" tvg-ID="PBS 13 (WNET) New York" tvg-name="PBS 13 (WNET) New York" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10106_h15_aa.png",PBS 13 (WNET) New York
-#EXTINF:-1 group-title="USA TV" tvg-ID="Showtime (E)" tvg-name="Showtime (E)" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10109_h15_aa.png",Showtime (E)
 #EXTINF:-1 group-title="USA TV" tvg-ID="TNT" tvg-name="TNT" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10122_h15_aa.png",TNT
 #EXTINF:-1 group-title="USA TV" tvg-ID="WABC (New York) ABC East" tvg-name="WABC (New York) ABC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10130_h15_aa.png",WABC (New York) ABC East
