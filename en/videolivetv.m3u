@@ -1,10 +1,17 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/buddylive/main/en/videoall.xml"
-# Last Updated: 2025-07-12 07:22:04 UTC
-#EXTINF:-1 group-title="USA TV" tvg-ID="Disney Junior" tvg-name="Disney Junior" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10065_h15_aa.png",Disney Junior
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPN" tvg-name="ESPN" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10068_h15_aa.png",ESPN
-#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNU" tvg-name="ESPNU" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111909_h15_aa.png",ESPNU
-#EXTINF:-1 group-title="USA TV" tvg-ID="FX" tvg-name="FX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10074_h15_aa.png",FX
-#EXTINF:-1 group-title="USA TV" tvg-ID="Hallmark" tvg-name="Hallmark" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10078_h15_aa.png",Hallmark
-#EXTINF:-1 group-title="USA TV" tvg-ID="Lifetime" tvg-name="Lifetime" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10089_h15_aa.png",Lifetime
-#EXTINF:-1 group-title="USA TV" tvg-ID="SEC Network" tvg-name="SEC Network" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111917_h15_aa.png",SEC Network
-#EXTINF:-1 group-title="USA TV" tvg-ID="The Movie Channel East" tvg-name="The Movie Channel East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10119_h15_aa.png",The Movie Channel East
+# Last Updated: 2025-07-12 08:26:00 UTC
+#EXTINF:-1 group-title="USA TV" tvg-ID="CSPAN 2" tvg-name="CSPAN 2" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10062_h15_aa.png",CSPAN 2
+#EXTINF:-1 group-title="USA TV" tvg-ID="Disney XD" tvg-name="Disney XD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10066_h15_aa.png",Disney XD
+#EXTINF:-1 group-title="USA TV" tvg-ID="ESPNews" tvg-name="ESPNews" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111908_h15_aa.png",ESPNews
+#EXTINF:-1 group-title="USA TV" tvg-ID="FXX" tvg-name="FXX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10076_h15_aa.png",FXX
+#EXTINF:-1 group-title="USA TV" tvg-ID="HBO East" tvg-name="HBO East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10080_h15_aa.png",HBO East
+#EXTINF:-1 group-title="USA TV" tvg-ID="HBO Zone HD" tvg-name="HBO Zone HD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89547_h15_aa.png",HBO Zone HD
+#EXTINF:-1 group-title="USA TV" tvg-ID="HGTV" tvg-name="HGTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10083_h15_aa.png",HGTV
+#EXTINF:-1 group-title="USA TV" tvg-ID="MeTV Toons" tvg-name="MeTV Toons" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s89548_h15_aa.png",MeTV Toons
+#EXTINF:-1 group-title="USA TV" tvg-ID="MovieMAX" tvg-name="MovieMAX" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10094_h15_aa.png",MovieMAX
+#EXTINF:-1 group-title="USA TV" tvg-ID="NFL Network" tvg-name="NFL Network" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s111914_h15_aa.png",NFL Network
+#EXTINF:-1 group-title="USA TV" tvg-ID="OWN" tvg-name="OWN" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10104_h15_aa.png",OWN
+#EXTINF:-1 group-title="USA TV" tvg-ID="SYFY" tvg-name="SYFY" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10113_h15_aa.png",SYFY
+#EXTINF:-1 group-title="USA TV" tvg-ID="TeenNick" tvg-name="TeenNick" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10116_h15_aa.png",TeenNick
+#EXTINF:-1 group-title="USA TV" tvg-ID="WABC (New York) ABC East" tvg-name="WABC (New York) ABC East" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10130_h15_aa.png",WABC (New York) ABC East
+#EXTINF:-1 group-title="USA TV" tvg-ID="truTV" tvg-name="truTV" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10124_h15_aa.png",truTV
