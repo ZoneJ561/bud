@@ -248,7 +248,7 @@ for name, link in live_tv_links:
         if m3u8_urls:
             m3u8_url = m3u8_urls[0]
         else:
-            m3u8_url = "https://github.com/BuddyChewChew/rtnaodhor93n398/raw/main/en/offline.mp4"
+            m3u8_url = "https://github.com/BuddyChewChew/buddylive/raw/main/en/offline.mp4"
     except Exception as e:
         # If an exception occurs (e.g., button not found), use the default link
         m3u8_url = "https://github.com/BuddyChewChew/buddylive/raw/main/en/offline.mp4"
