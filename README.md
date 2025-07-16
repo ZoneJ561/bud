@@ -20,3 +20,10 @@ EPG: https://tvpass.org/epg.xml
 M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/Backup.m3u
 
 EPG: https://github.com/BuddyChewChew/My-Streams/raw/refs/heads/main/epgs/Backup-epg.xml.gz
+
+
+##  📺 Buddy TV Pluto, Samsung, Stirr, Plex, Tubi, Roku (Playlist & EPG)
+
+Link: https://github.com/BuddyChewChew/app-m3u-generator/tree/main/playlists
+
+
