@@ -22,7 +22,7 @@ M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/
 EPG: https://github.com/BuddyChewChew/My-Streams/raw/refs/heads/main/epgs/Backup-epg.xml.gz
 
 
-##  📺 Buddy TV Pluto, Samsung, Stirr, Plex, Tubi, Roku (Playlist & EPG)
+##  📺 Buddy TV: Pluto, Samsung, Stirr, Plex, Tubi, Roku (Playlist & EPG)
 
 Link: https://github.com/BuddyChewChew/app-m3u-generator/tree/main/playlists
 
