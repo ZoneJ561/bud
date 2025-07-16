@@ -7,7 +7,7 @@ EPG: [https://raw.githubusercontent.com/BuddyChewChew/buddylive/refs/heads/main/
 
 
 
-##  📺 TheTVApp.to (SD)
+##  📺 TheTVApp.to (SD/HD)
 
 M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/TheTVApp.m3u8
 
