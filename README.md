@@ -1,3 +1,12 @@
+##  📺 Buddy TV
+
+
+M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/Backup.m3u
+
+EPG: https://github.com/BuddyChewChew/My-Streams/raw/refs/heads/main/epgs/Backup-epg.xml.gz
+
+
+
 ##  📺 TheTVApp.to (SD)
 
 
@@ -13,13 +22,6 @@ M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/
 
 EPG: https://tvpass.org/epg.xml
 
-
-##  📺 Buddy TV
-
-
-M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/Backup.m3u
-
-EPG: https://github.com/BuddyChewChew/My-Streams/raw/refs/heads/main/epgs/Backup-epg.xml.gz
 
 
 ##  📺 Pluto, Samsung, Stirr, Plex, Tubi, Roku (Playlist & EPG)
