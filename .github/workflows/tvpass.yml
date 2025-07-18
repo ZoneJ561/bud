@@ -24,7 +24,7 @@ jobs:
         run: pip install requests
 
       - name: ▶️ Run TVPass playlist update script
-        run: python py tvpass.py
+        run: python tvpass.py
 
       - name: 💾 Commit and push changes
         run: |
