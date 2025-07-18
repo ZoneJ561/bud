@@ -7,7 +7,7 @@ EPG: https://github.com/BuddyChewChew/My-Streams/raw/refs/heads/main/epgs/Backup
 
 
 
-##  📺 TheTVApp.to (SD)
+##  📺 TheTVApp.to (SD STAYS LIVE) No High Volume Warning. 
 
 
 M3U: [https://raw.githubusercontent.com/BuddyChewChew/buddylive/refs/heads/main/en/videoall.m3u](https://raw.githubusercontent.com/BuddyChewChew/buddylive/refs/heads/main/en/videoall.m3u)
@@ -16,7 +16,7 @@ EPG: [https://raw.githubusercontent.com/BuddyChewChew/buddylive/refs/heads/main/
 
 
 
-##  📺 TheTVApp.to (SD/HD)
+##  📺 TheTVApp.to (SD/HD) (SD STAYS LIVE) No High Volume Warning.
 
 M3U: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/TheTVApp.m3u8
 
