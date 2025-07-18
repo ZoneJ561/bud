@@ -8,15 +8,15 @@ LOCAL_FILE = "TVPass.m3u"
 LOCKED_GROUPS = {
     "ppv": {
         "tvg-id": "PPV.EVENTS.Dummy.us",
-        "tvg-logo": "http://drewlive24.duckdns.org:9000/Logos/DrewLiveSports.png"
+        "tvg-logo": "https://github.com/tv-logo/tv-logos/blob/main/misc/media/pay-per-view-2.png?raw=true"
     },
     "mlb": {
         "tvg-id": "MLB.Baseball.Dummy.us",
-        "tvg-logo": "http://drewlive24.duckdns.org:9000/Logos/Baseball3.png"
+        "tvg-logo": "https://github.com/tv-logo/tv-logos/blob/main/misc/sports/ppv-live/ppv-basketball-1.png?raw=true"
     },
     "wnba": {
         "tvg-id": "WNBA.dummy.us",
-        "tvg-logo": "http://drewlive24.duckdns.org:9000/Logos/WNBA.png"
+        "tvg-logo": "https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/wnba-league-pass-us.png?raw=true"
     }
 }
 
