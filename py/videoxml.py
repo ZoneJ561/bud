@@ -704,7 +704,7 @@ for channel_id in channel_ids:
 if all_programs:
     channel_names_list = list(channel_names.keys())  # Get the channel IDs in the correct order
     channel_programs = {}
-    for channel_id in channel_names_list:
+for channel_id in channel_names_list:
     if channel_id in all_programs:
         channel_programs[channel_id] = [
             {
